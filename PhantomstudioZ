@@ -1,0 +1,86 @@
+from IPython.core.display import display, HTML
+
+html_code = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phantom studioZ Salon Academy</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fdfcf8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ff6f61;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 6px;
+            text-decoration-color: #ffa726;
+        }
+        .button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .course-box {
+            background: #f1f3f4;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px 0;
+        }
+        .course-title {
+            font-weight: bold;
+        }
+        .course-highlight {
+            color: #ff6f61;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Phantom studioZ Salon Academy</h1>
+
+    <div class="section">
+        <h2>Master Your Beauty Skills With <span class="highlight">Phantom studioZ</span> Salon Academy</h2>
+        <p>Enroll now to gain hands-on experience in mastering salon skills from industry professionals. Our short courses are designed to deliver quick skills with significant impact.</p>
+        <button class="button">Enroll Now</button>
+    </div>
+
+    <div class="section">
+        <h2><span class="highlight">Unlock Your Potential</span> in the Beauty Industry</h2>
+        <p>Discover the transformative power of beauty with Phantom studioZ Salon Academy. Our expert-led programs are tailored to equip you with essential skills, whether you're just starting or aiming to advance your expertise.</p>
+    </div>
+
+    <div class="section course-box">
+        <p class="course-title">Master the Art of <span class="course-highlight">Hair Styling</span></p>
+        <p>Hands-on training that empowers you to create stunning looks. Elevate your skills quickly and effectively!</p>
+    </div>
+
+    <div class="section course-box">
+        <p class="course-title">Become a Certified <span class="course-highlight">Makeup Artist</span></p>
+        <p>Learn the techniques that will set you apart in the beauty industry.</p>
+    </div>
+
+    <div class="section course-box">
+        <p class="course-title">Explore Cutting-Edge <span class="course-highlight">Nail Technology</span></p>
+        <p>Our nail technology courses provide you with the latest trends and techniques to deliver exceptional services.</p>
+    </div>
+
+</body>
+</html>
+"""
+
+display(HTML(html_code))
