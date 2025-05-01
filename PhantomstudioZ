@@ -9,23 +9,53 @@ html_code = """
     <style>
         body {
             font-family: 'Segoe UI', sans-serif;
-            background-color: #fdfcf8;
-            color: #333;
+            background-color: #fefdfc;
             margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff6f61;
+            padding: 15px 25px;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        nav a {
+            margin-left: 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
             padding: 20px;
+            max-width: 900px;
+            margin: auto;
         }
-        h1, h2 {
-            color: #ff6f61;
+
+        h2 {
+            color: #222;
         }
-        .section {
-            margin-bottom: 30px;
-        }
+
         .highlight {
             font-weight: bold;
             text-decoration: underline;
             text-underline-offset: 6px;
             text-decoration-color: #ffa726;
         }
+
         .button {
             background-color: #ff6f61;
             color: white;
@@ -34,50 +64,106 @@ html_code = """
             border-radius: 10px;
             cursor: pointer;
             font-size: 16px;
+            margin-top: 10px;
+            transition: background 0.3s;
         }
+
+        .button:hover {
+            background-color: #ff3b2e;
+        }
+
         .course-box {
-            background: #f1f3f4;
-            border-radius: 15px;
+            background: #f3f3f3;
+            border-radius: 12px;
             padding: 20px;
-            margin: 10px 0;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
+
         .course-title {
             font-weight: bold;
         }
+
         .course-highlight {
             color: #ff6f61;
+        }
+
+        .img-box {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .img-box img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Phantom studioZ Salon Academy</h1>
+<header>
+    <h1>Phantom studioZ</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Enroll</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-    <div class="section">
-        <h2>Master Your Beauty Skills With <span class="highlight">Phantom studioZ</span> Salon Academy</h2>
-        <p>Enroll now to gain hands-on experience in mastering salon skills from industry professionals. Our short courses are designed to deliver quick skills with significant impact.</p>
-        <button class="button">Enroll Now</button>
-    </div>
+<div class="container">
 
-    <div class="section">
-        <h2><span class="highlight">Unlock Your Potential</span> in the Beauty Industry</h2>
-        <p>Discover the transformative power of beauty with Phantom studioZ Salon Academy. Our expert-led programs are tailored to equip you with essential skills, whether you're just starting or aiming to advance your expertise.</p>
-    </div>
+    <h2>Master Your Beauty Skills With <span class="highlight">Phantom studioZ</span> Salon Academy</h2>
+    <p>Enroll now to gain hands-on experience in mastering salon skills from industry professionals. Our short courses are designed to deliver quick skills with significant impact.</p>
+    <button class="button">Enroll Now</button>
 
-    <div class="section course-box">
+    <h2><span class="highlight">Unlock Your Potential</span> in the Beauty Industry</h2>
+    <p>Discover the transformative power of beauty with Phantom studioZ Salon Academy. Join a community that fosters creativity and professional growth.</p>
+
+    <div class="course-box">
         <p class="course-title">Master the Art of <span class="course-highlight">Hair Styling</span></p>
         <p>Hands-on training that empowers you to create stunning looks. Elevate your skills quickly and effectively!</p>
     </div>
 
-    <div class="section course-box">
+    <div class="course-box">
         <p class="course-title">Become a Certified <span class="course-highlight">Makeup Artist</span></p>
         <p>Learn the techniques that will set you apart in the beauty industry.</p>
     </div>
 
-    <div class="section course-box">
+    <div class="course-box">
         <p class="course-title">Explore Cutting-Edge <span class="course-highlight">Nail Technology</span></p>
-        <p>Our nail technology courses provide you with the latest trends and techniques to deliver exceptional services.</p>
+        <p>Stay updated with trends and deliver exceptional services with our nail technology courses.</p>
     </div>
+
+    <div class="img-box">
+        <p><strong>Course Preview:</strong></p>
+        <img src="https://via.placeholder.com/300x200.png?text=Hair+Styling" alt="Hair Styling Preview">
+        <img src="https://via.placeholder.com/300x200.png?text=Makeup+Course" alt="Makeup Preview">
+        <img src="https://via.placeholder.com/300x200.png?text=Nail+Tech" alt="Nail Tech Preview">
+    </div>
+</div>
+
+<footer>
+    © 2025 Phantom studioZ Salon Academy | All Rights Reserved.
+</footer>
 
 </body>
 </html>
