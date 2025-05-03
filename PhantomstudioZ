@@ -153,6 +153,11 @@ html_code = """
         <p>Stay updated with trends and deliver exceptional services with our nail technology courses.</p>
     </div>
 
+     <div class="course-box">
+        <p class="course-title">Explore Cutting-Edge <span class="course-highlight">Salon Management</span></p>
+        <p>Management skills therory and practicals.</p>
+    </div>
+
     <div class="img-box">
         <p><strong>Course Preview:</strong></p>
         <img src="https://via.placeholder.com/300x200.png?text=Hair+Styling" alt="Hair Styling Preview">
