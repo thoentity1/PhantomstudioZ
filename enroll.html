@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enroll – Phantom studioZ Salon Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+      color: #333;
+    }
+    h1 {
+      color: #B22222;
+      font-size: 32px;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 10px;
+      max-width: 600px;
+    }
+    form {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #B22222;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #8B1A1A;
+    }
+    .nav {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Phantom studioZ Salon Academy</h1>
+  <p><strong>Master Your Beauty Skills With Phantom studioZ Salon Academy</strong></p>
+  <p>Enroll now to gain hands-on experience in mastering salon skills from industry professionals. Our short courses are designed to deliver quick skills with significant impact.</p>
+
+  <form action="https://formspree.io/f/mgvkanep" method="POST">
+    <input type="hidden" name="_redirect" value="thank-you.html" />
+    <label for="name">Your Name</label>
+    <input type="text" name="name" id="name" required>
+
+    <label for="email">Your Email</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="course">Course of Interest</label>
+    <input type="text" name="course" id="course" required>
+
+    <button type="submit">Enroll Now</button>
+  </form>
+
+  <div class="nav">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
