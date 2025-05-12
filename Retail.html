@@ -225,8 +225,20 @@
   <p>Premium Salon Products – Professional Quality</p>
 </header>
 
-<h2 class="category">Hair Care</h2>
+<h2 class="category">Short courses</h2>
 <div class="product-grid">
+    <form action="https://formspree.io/f/yourFormID" method="POST" style="padding: 10px;">
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name" required style="width: 100%; margin-bottom: 8px;"><br>
+
+  <label for="address">Delivery Address:</label><br>
+  <textarea name="address" required style="width: 100%; margin-bottom: 8px;"></textarea><br>
+
+  <input type="hidden" name="product" value="Hair and Braiding Course">
+
+  <button type="submit" class="buy-button" style="margin-top: 10px;">Submit Address & Buy</button>
+</form>
+
   <div class="product-card">
     <img src="images/product1.jpeg" alt="Hair and braiding course">
     <div class="product-info">
