@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Phantom studioZ</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #ff6f61;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e55449;
+    }
+
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .form-footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Create Account</h2>
+    <form action="#" method="post">
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Create Password" required>
+      <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+      <button type="submit">Register</button>
+    </form>
+    <div class="form-footer">
+      Already have an account? <a href="signin.html">Sign in</a>
+    </div>
+  </div>
+
+</body>
+</html>
