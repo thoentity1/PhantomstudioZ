@@ -305,21 +305,28 @@
   </div>
 </div>
    <div class="product-card">
-    <img src="images/product2.jpeg" alt="Shampoo">
+    <img src="images/product2.jpeg" alt="Nail technology course">
     <div class="product-info">
-      <h3>Revitalizing Shampoo</h3>
-      <p class="description">Infused with keratin for strong, healthy hair.</p>
-      <div class="product-meta">Price: R95 | Unit: 250ml</div>
+      <h3>Nail technology course</h3>
+      <p class="description">Nail technology virtual training, Nail kit with lamp.</p>
+      <div class="product-meta">Price: R1500.00 | Unit:1</div>
     </div>
-    <form onsubmit="return redirectToYoco(this)" style="padding: 10px;">
+    <form 
+  action="https://formspree.io/f/your-form-id" 
+  method="POST" 
+  onsubmit="return redirectAfterSubmit(this)"
+>
   <label for="name">Your Name:</label><br>
   <input type="text" name="name" required style="width: 100%; margin-bottom: 8px;"><br>
 
   <label for="address">Delivery Address:</label><br>
   <textarea name="address" required style="width: 100%; margin-bottom: 8px;"></textarea><br>
 
-  <button type="submit" class="buy-button">Submit Address & Buy</button>
+  <input type="hidden" name="_redirect" value="https://pay.yoco.com/r/7vaL1p">
+  
+  <button type="submit" class="buy-button">Submit Address & Pay</button>
 </form>
+
 
 <script>
   function redirectToYoco(form) {
