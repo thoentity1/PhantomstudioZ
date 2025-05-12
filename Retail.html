@@ -399,7 +399,42 @@
 
 </div>
 </div>
- 
+<div class="product-card">
+    <img src="images/product3.jpeg" alt="Bob Wig">
+    <div class="product-info">
+      <h3>Bob Wig</h3>
+      <p class="description">Heat resistant Black to Red tone wig.</
+ </div>
+    <form onsubmit="return redirectToYoco(this)" style="padding: 10px;">
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name" required style="width: 100%; margin-bottom: 8px;"><br>
+
+  <label for="address">Delivery Address:</label><br>
+  <textarea name="address" required style="width: 100%; margin-bottom: 8px;"></textarea><br>
+
+  <button type="submit" class="buy-button">Submit Address & Buy</button>
+</form>
+
+<script>
+  function redirectToYoco(form) {
+    const name = encodeURIComponent(form.name.value);
+    const address = encodeURIComponent(form.address.value);
+
+    // Optional: Log or alert the details for testing
+    console.log("Name:", name);
+    console.log("Address:", address);
+
+    // Redirect to Yoco link (replace with your real link)
+    const yocoLink = "https://pay.yoco.com/r/7vaL1p";
+
+    // Optional: You could add name/address as URL params (if tracking)
+    window.location.href = yocoLink;
+
+    return false; // Prevent default form submission
+  }
+</script>
+</div>div>
+
 
 
 
