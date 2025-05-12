@@ -311,21 +311,26 @@
       <p class="description">Nail technology virtual training, Nail kit with lamp.</p>
       <div class="product-meta">Price: R1500.00 | Unit:1</div>
     </div>
-    <form
-  action="https://formspree.io/f/xqaqyldj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+    </form>
+
+<script>
+  function redirectToYoco(form) {
+    const name = encodeURIComponent(form.name.value);
+    const address = encodeURIComponent(form.address.value);
+
+    // Optional: Log or alert the details for testing
+    console.log("Name:", name);
+    console.log("Address:", address);
+
+    // Redirect to Yoco link (replace with your real link)
+    const yocoLink = "https://pay.yoco.com/r/7vaL1p";
+
+    // Optional: You could add name/address as URL params (if tracking)
+    window.location.href = yocoLink;
+
+    return false; // Prevent default form submission
+  }
+</script>
 
   <input type="hidden" name="_redirect" value="https://pay.yoco.com/r/mz80PM">
   
