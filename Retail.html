@@ -267,7 +267,7 @@
   </div>
 
   <div class="product-card">
-    <img src="images/product2.jpeg" alt="Make up artistry Course">
+    <img src="images/product2.jpeg" alt="Nail technology Course">
     <div class="product-info">
       <h3>Make up course</h3>
       <p class="description">Make up tuition, virtual training, Make up kit and certificate.</p>
@@ -304,39 +304,22 @@
 
   </div>
 </div>
-   <div class="product-card">
-    <img src="images/product2.jpeg" alt="Nail technology course">
+    <div class="product-card">
+    <img src="images/product2.jpeg" alt="Make up artistry Course">
     <div class="product-info">
-      <h3>Nail technology course</h3>
-      <p class="description">Nail technology virtual training, Nail kit with lamp.</p>
-      <div class="product-meta">Price: R1500.00 | Unit:1</div>
+      <h3>Make up course</h3>
+      <p class="description">Make up tuition, virtual training, Make up kit and certificate.</p>
+      <div class="product-meta">Price: R1200.00 | Unit:1</div>
     </div>
+    <form onsubmit="return redirectToYoco(this)" style="padding: 10px;">
+  <label for="name">Your Name:</label><br>
+  <input type="text" name="name" required style="width: 100%; margin-bottom: 8px;"><br>
+
+  <label for="address">Delivery Address:</label><br>
+  <textarea name="address" required style="width: 100%; margin-bottom: 8px;"></textarea><br>
+
+  <button type="submit" class="buy-button">Submit Address & Buy</button>
 </form>
-
-<script>
-  function redirectToYoco(form) {
-    const name = encodeURIComponent(form.name.value);
-    const address = encodeURIComponent(form.address.value);
-
-    // Optional: Log or alert the details for testing
-    console.log("Name:", name);
-    console.log("Address:", address);
-
-    // Redirect to Yoco link (replace with your real link)
-    const yocoLink = "https://pay.yoco.com/r/7vaL1p";
-
-    // Optional: You could add name/address as URL params (if tracking)
-    window.location.href = yocoLink;
-
-    return false; // Prevent default form submission
-  }
-</script>
-
-  <input type="hidden" name="_redirect" value="https://pay.yoco.com/r/mz80PM">
-  
-  <button type="submit" class="buy-button">Submit Address & Pay</button>
-</form>
-
 
 <script>
   function redirectToYoco(form) {
